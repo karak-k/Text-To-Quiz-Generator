@@ -24,7 +24,7 @@ scikit-learn==1.0.1
 scipy==1.10.0
 six==1.15.0
 sklearn==0.0
-smart-open==3.0.0
+smart-open==2.2.1
 spacy==2.3.2
 srsly==1.0.2
 thinc==7.4.1
