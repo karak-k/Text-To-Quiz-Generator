@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Crafter</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+</head>
+<body>
+    <div id="loading" class="loading">
+        <img src="loadingimage2.gif" alt="loading..">
+        <h2>Please wait while we process the video</h2>
+    </div>
+    <div id="content">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+
+        <div class="header">
+            <a href="#default" class="logo">Quiz Crafter</a>
+            <div class="header-right">
+                <a href="#home">Home</a>
+                <a href="https://www.linkedin.com/in/anshikachoudhary005/">About Me</a>
+
+            </div>
+        </div>
+        <br></br>
+        <br></br>
+        <div>
+            <br></br>
+     <div class="container">
+     <div class="box-container">
+     <div class="box">
+        <label for="" class="close-btn fa fa-video-camera"></label>
+        <h2>Upload Video File</h2>
+        <br><br><br>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="video_file" accept=".mp4" required>
+            <br><br><br>
+            <br><br><br>
+            <input type="submit" name="submit_section1" class="submit" value="Submit" onclick="loading();">
+        </form>
+     </div>
+
+     <div class="box">
+        <label for="" class="close-btn fa fa-link"></label>
+        <h2>Enter Video URL</h2>
+        <br><br><br>
+        <form action="/" method="post">
+            <input type="url" name="video_url" placeholder="Enter Video URL" required>
+            <br><br><br>
+            <br><br><br>
+            <input type="submit" name="submit_section2" class="submit" value="Submit" onclick="loading();">
+        </form>
+     </div>
+
+     <div class="box">
+        <h2>Enter Text</h2>
+        <br><br><br>
+        <form action="/" method="post">
+            <textarea name="text_input" class="text-box" placeholder="Enter Text" rows="4" cols="50" required></textarea>
+            <br><br><br>
+            <br><br><br>
+            <input id="txt-but" type="submit" name="submit_section3" class="submit" value="Submit"onclick="loading();">
+        </form>
+     </div>
+     </div>
+     </div>
+     <br></br>
+            <br></br>
+            <div>
+                <br></br>
+                <footer class="foot">
+                    <p>&copy; Copyright 2024, CS-470 Project</p>
+                </footer>
+            </div>
+        </div>
+</div>    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        function loading() {
+            $("#loading").show();
+            $("#content").hide();
+        }
+        // ]]>
+    </script>
+
+</body>
+</html>
