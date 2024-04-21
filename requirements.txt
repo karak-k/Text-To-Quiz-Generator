@@ -37,3 +37,5 @@ urllib3==1.26.18
 wasabi==0.8.0
 Werkzeug==2.3.8
 zipp==3.3.0
+gensim==4.3.2
+setuptools==69.5.1
