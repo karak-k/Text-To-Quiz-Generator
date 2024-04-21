@@ -4,7 +4,6 @@ from flask import Flask, render_template, redirect, url_for
 from flask.globals import request
 from werkzeug.utils import secure_filename
 from workers import  txt2questions
-import model
 
 app = Flask(__name__)
 

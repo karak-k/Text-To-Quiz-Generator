@@ -7,7 +7,7 @@ import gensim.downloader as api
 from gensim.models import Word2Vec
 from nltk.tokenize import sent_tokenize, word_tokenize
 import random
-import numpy as np
+# import numpy as np
 
 
 class IncorrectAnswerGenerator:
