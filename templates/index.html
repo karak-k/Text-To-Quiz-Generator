@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="loading" class="loading">
-        <img src="loadingimage2.gif" alt="loading..">
+        <img src="{{ url_for('static', filename='loadingGif.gif') }}" alt="loading..">
         <h2>Please wait while we process the video</h2>
     </div>
     <div id="content">
@@ -52,7 +52,7 @@
             <input type="url" name="video_url" placeholder="Enter Video URL" required>
             <br><br><br>
             <br><br><br>
-            <input type="submit" name="submit_section2" class="submit" value="Submit" onclick="loading();">
+            <input type="submit" name="submit_section2" class="submit" value="Submit" onclick="loading()">
         </form>
      </div>
 
@@ -63,7 +63,7 @@
             <textarea name="text_input" class="text-box" placeholder="Enter Text" rows="4" cols="50" required></textarea>
             <br><br><br>
             <br><br><br>
-            <input id="txt-but" type="submit" name="submit_section3" class="submit" value="Submit"onclick="loading();">
+            <input id="txt-but" type="submit" name="submit_section3" class="submit" value="Submit"onclick="loading()">
         </form>
      </div>
      </div>
@@ -80,7 +80,6 @@
 </div>    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
         // <![CDATA[
         function loading() {
