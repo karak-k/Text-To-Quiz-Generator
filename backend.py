@@ -81,11 +81,10 @@ def submit():
 
 @app.route('/result', methods=['POST', 'GET'])
 def result():
-    total_questions = len(request.form.items())
     correct_q = 0
     for k, v in request.form.items():
         correct_q += 1
-    return render_template('result.html', total=total_questions, correct=correct_q)
+    return render_template('result.html', total=5, correct=correct_q)
 
 
 if __name__ == "__main__":
